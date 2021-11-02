@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">BMI</string>
     <string name="next"><u>Next</u></string>
+    <string name="BMI_Analyzer">BMI Analyzer</string>
+    <string name="welcome">Welcome Back</string>
+    <string name="Help_text_1">if you already have an account, log in</string>
+    <string name="user">Username</string>
+    <string name="Password">Password</string>
+    <string name="Login">Log in</string>
+    <string name="SignUp">Sign Up</string>
+    <string name="text_create">Create New Account</string>
+    <string name="name">Name</string>
+    <string name="email">E-Mail</string>
+    <string name="Re_password">Re-password</string>
+    <string name="create">CREATE</string>
 </resources>

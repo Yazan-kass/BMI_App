@@ -13,8 +13,9 @@ import android.widget.TextView;
 
 public class Splash extends AppCompatActivity {
 
-    private Handler mHandler = new Handler();
     private TextView tv_next;
+    private Handler mHandler = new Handler();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,18 +31,20 @@ public class Splash extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(Splash.this, Login.class);
                 startActivity(i);
+                mHandler.removeCallbacksAndMessages(null);
             }
         });
 
        mHandler.postDelayed(new Runnable() {
            public void run() {
-               doStuff();
+
+               activityChange();
            }
         }, 5000);
 
     }
 
-   private void doStuff() {
+   private void activityChange() {
         Intent intent = new Intent(Splash.this, Login.class);
 
         startActivity(intent);
