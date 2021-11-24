@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/BMI_App/app/src/main/res/layout/activity_complete_information.xml" value="0.19010416666666666" />
         <entry key="..\:/BMI_App/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
-        <entry key="..\:/BMI_App/app/src/main/res/layout/activity_signup.xml" value="0.20416666666666666" />
+        <entry key="..\:/BMI_App/app/src/main/res/layout/activity_omplete.xml" value="0.20416666666666666" />
+        <entry key="..\:/BMI_App/app/src/main/res/layout/activity_signup.xml" value="0.25" />
         <entry key="..\:/BMI_App/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
         <entry key="..\:/Uni/Level 5 - Semester 1/Mobile Computing/BMI/BMI/app/src/main/res/layout/activity_login.xml" value="0.26875" />
         <entry key="..\:/Uni/Level 5 - Semester 1/Mobile Computing/BMI/BMI/app/src/main/res/layout/activity_main.xml" value="0.26875" />

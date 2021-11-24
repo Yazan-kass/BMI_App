@@ -70,11 +70,11 @@
                 android:id="@+id/password_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:ems="15"
                 android:hint="@string/Password"
-                android:inputType="textPassword"
-                android:background="@color/white"
-                android:layout_marginTop="5dp"/>
+                android:inputType="textPassword" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
