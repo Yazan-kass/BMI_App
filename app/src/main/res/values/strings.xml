@@ -35,4 +35,16 @@
 
     <!-- new record activity -->
     <string name="new_Record">New Record</string>
+    <!--  home activity  -->
+    <string name="hi">Hi, Yazan</string>
+    <string name="new_status">Current Status</string>
+    <string name="LogOut">Log Out</string>
+    <string name="current_status">Current Status</string>
+    <string name="mas_current_status">Normal (still Good)</string>
+    <string name="Old_Status">Old Status</string>
+    <string name="Add_Food">Add Food</string>
+    <string name="Add_Record">Add Record</string>
+    <string name="View_Food">View Food</string>
+
+
 </resources>

@@ -5,11 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class Login extends AppCompatActivity {
 
     private TextView tv_signUp;
+    private Button button_logIn;
 
 
     @Override
@@ -25,6 +27,16 @@ public class Login extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(Login.this, Signup.class);
                 startActivity(i);
+            }
+        });
+        button_logIn = findViewById(R.id.button_login);
+
+        button_logIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Login.this, home.class);
+                startActivity(i);
+                finish();
             }
         });
     }

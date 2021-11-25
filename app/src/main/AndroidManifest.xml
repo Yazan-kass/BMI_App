@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BMI">
         <activity
+            android:name=".home"
+            android:exported="false" />
+        <activity
             android:name=".New_Record"
             android:exported="false" />
         <activity
