@@ -1,18 +1,27 @@
 <resources>
+    <!-- splash activity -->
     <string name="app_name">BMI</string>
     <string name="next"><u>Next</u></string>
+
+    <!-- login activity -->
+
     <string name="BMI_Analyzer">BMI Analyzer</string>
     <string name="welcome">Welcome Back</string>
     <string name="Help_text_1">if you already have an account, log in</string>
     <string name="user">Username</string>
     <string name="Password">Password</string>
     <string name="Login">Log in</string>
+
+    <!-- sign up activity -->
     <string name="SignUp">Sign Up</string>
     <string name="text_create">Create New Account</string>
     <string name="name">Name</string>
     <string name="email">E-Mail</string>
     <string name="Re_password">Re-password</string>
     <string name="create">CREATE</string>
+
+    <!-- complete information activity -->
+
     <string name="information">Complete Your Information</string>
     <string name="gender">Gender</string>
     <string name="male">Male</string>
@@ -23,4 +32,7 @@
     <string name="cm">cm</string>
     <string name="BirthDay">Birth Of Day</string>
     <string name="Save_Data">Save Data</string>
+
+    <!-- new record activity -->
+    <string name="new_Record">New Record</string>
 </resources>

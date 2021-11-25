@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CompleteInformation">
-
+    tools:context=".New_Record">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
@@ -36,62 +35,17 @@
         android:orientation="vertical"
         android:padding="20sp">
 
+
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="12sp"
+            android:layout_marginBottom="100sp"
             android:gravity="center"
             android:padding="12sp"
+            android:text="@string/new_Record"
             android:textColor="@color/main_color"
             android:textSize="44dp"
-            android:textStyle="bold"
-            android:text="@string/information" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20sp"
-            android:layout_marginTop="24sp"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:layout_marginRight="20dp"
-            >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="20sp"
-                android:gravity="center"
-                android:text="@string/gender"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="@color/main_color" />
-
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginLeft="47sp">
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:buttonTint="@color/main_color"
-                    android:checked="true"
-                    android:text="@string/male"
-                    android:textSize="16sp"
-                    android:textColor="@color/main_color" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="12sp"
-                    android:buttonTint="@color/main_color"
-                    android:text="@string/female"
-                    android:textSize="16sp"
-                    android:textColor="@color/main_color" />
-            </RadioGroup>
-        </LinearLayout>
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -111,47 +65,43 @@
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
-            <LinearLayout
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16sp"
+                android:background="@drawable/borderblue"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:text="-"
+                android:textColor="@color/main_color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:background="@drawable/borderblue"
+                android:gravity="center"
+                android:textColor="@color/main_color"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_gravity="center"
+                android:background="@drawable/borderblue"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="@color/main_color"
+                android:textSize="16sp" />
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginLeft="52sp">
-                <androidx.appcompat.widget.AppCompatButton
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/borderblue"
-                    android:gravity="center"
-                    android:text="-"
-                    android:textColor="@color/main_color"
-                    android:textSize="16sp" />
-
-                <EditText
-                    android:layout_width="80dp"
-                    android:layout_height="20dp"
-                    android:background="@drawable/borderblue"
-                    android:gravity="center"
-                    android:textColor="@color/main_color"
-                    android:textSize="16sp" />
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:layout_width="20sp"
-                    android:layout_height="20sp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/borderblue"
-                    android:gravity="center"
-                    android:text="+"
-                    android:textColor="@color/main_color"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:text="@string/kg"
-                    android:textColor="@color/main_color" />
-            </LinearLayout>
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/kg"
+                android:textColor="@color/main_color" />
         </LinearLayout>
 
         <LinearLayout
@@ -173,17 +123,15 @@
                 android:textColor="@color/main_color"
                 android:textSize="18sp"
                 android:textStyle="bold" />
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginLeft="52sp">
+
             <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
                 android:layout_gravity="center"
+                android:layout_marginLeft="16sp"
                 android:background="@drawable/borderblue"
                 android:gravity="center"
+                android:paddingBottom="4dp"
                 android:text="-"
                 android:textColor="@color/main_color"
                 android:textSize="16sp" />
@@ -215,6 +163,37 @@
                 android:textColor="@color/main_color" />
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="12sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="12sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="40dp"
+                android:text="Date"
+                android:textColor="@color/main_color"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16sp"
+                android:paddingBottom="4dp"
+                android:background="@drawable/borderblue"
+                android:gravity="center"
+                android:textColor="@color/main_color"
+                android:textSize="16sp" />
+
+
         </LinearLayout>
 
         <LinearLayout
@@ -230,17 +209,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20sp"
-                android:layout_marginRight="20dp"
-                android:text="@string/BirthDay"
+                android:layout_marginRight="40dp"
+                android:text="Time"
                 android:textColor="@color/main_color"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
 
             <EditText
-                android:layout_width="140dp"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="12sp"
+                android:layout_marginLeft="14sp"
+                android:paddingBottom="4dp"
                 android:background="@drawable/borderblue"
                 android:gravity="center"
                 android:textColor="@color/main_color"
@@ -265,6 +245,4 @@
 
     </LinearLayout>
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>
-

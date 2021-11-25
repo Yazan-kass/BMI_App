@@ -5,8 +5,9 @@
       <map>
         <entry key="..\:/BMI_App/app/src/main/res/drawable/borderblue.xml" value="0.2" />
         <entry key="..\:/BMI_App/app/src/main/res/drawable/drawableinformation.xml" value="0.2" />
-        <entry key="..\:/BMI_App/app/src/main/res/layout/activity_complete_information.xml" value="0.22" />
+        <entry key="..\:/BMI_App/app/src/main/res/layout/activity_complete_information.xml" value="0.33" />
         <entry key="..\:/BMI_App/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/BMI_App/app/src/main/res/layout/activity_new_record.xml" value="0.33" />
         <entry key="..\:/BMI_App/app/src/main/res/layout/activity_omplete.xml" value="0.20416666666666666" />
         <entry key="..\:/BMI_App/app/src/main/res/layout/activity_signup.xml" value="0.25" />
         <entry key="..\:/BMI_App/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
