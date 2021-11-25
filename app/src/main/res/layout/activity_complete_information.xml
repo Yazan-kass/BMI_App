@@ -7,4 +7,260 @@
     tools:context=".CompleteInformation">
 
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView_BIM"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/main_color"
+            android:text="@string/BMI_Analyzer"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20sp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12sp"
+            android:gravity="center"
+            android:padding="12sp"
+            android:textColor="@color/main_color"
+            android:textSize="36dp"
+            android:textStyle="bold"
+            android:text="@string/information" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="24sp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginRight="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:gravity="center"
+                android:text="@string/gender"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/main_color" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12sp"
+                    android:layout_marginRight="12sp"
+                    android:buttonTint="@color/main_color"
+                    android:checked="true"
+                    android:text="@string/male"
+                    android:textSize="16sp"
+                    android:textColor="@color/main_color" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12sp"
+                    android:layout_marginRight="12sp"
+                    android:buttonTint="@color/main_color"
+                    android:text="@string/female"
+                    android:textSize="16sp"
+                    android:textColor="@color/main_color" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="12sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20dp"
+                android:text="@string/weight"
+                android:textColor="@color/main_color"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16sp"
+                android:background="@drawable/borderblue"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:text="-"
+                android:textColor="@color/main_color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:background="@drawable/borderblue"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/main_color"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_gravity="center"
+                android:background="@drawable/borderblue"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="@color/main_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/kg"
+                android:textColor="@color/main_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="12sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="12sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20dp"
+
+                android:text="@string/length"
+                android:textColor="@color/main_color"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16sp"
+                android:background="@drawable/borderblue"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:text="-"
+                android:textColor="@color/main_color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:background="@drawable/borderblue"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/main_color"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_gravity="center"
+                android:background="@drawable/borderblue"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="@color/main_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/cm"
+                android:textColor="@color/main_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="12sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="12sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20dp"
+                android:text="@string/BirthDay"
+                android:textColor="@color/main_color"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12sp"
+                android:background="@drawable/borderblue"
+                android:gravity="center"
+                android:textColor="@color/main_color"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_saveData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20sp"
+            android:background="@color/main_color"
+            android:text="@string/Save_Data"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+

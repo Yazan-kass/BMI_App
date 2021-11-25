@@ -13,4 +13,14 @@
     <string name="email">E-Mail</string>
     <string name="Re_password">Re-password</string>
     <string name="create">CREATE</string>
+    <string name="information">Complete Your Information</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="weight">Weight</string>
+    <string name="kg">Kg</string>
+    <string name="length">Length</string>
+    <string name="cm">cm</string>
+    <string name="BirthDay">Birth Of Day</string>
+    <string name="Save_Data">Save Data</string>
 </resources>
