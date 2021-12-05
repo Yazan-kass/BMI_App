@@ -33,8 +33,6 @@
     <string name="BirthDay">Birth Of Day</string>
     <string name="Save_Data">Save Data</string>
 
-    <!-- new record activity -->
-    <string name="new_Record">New Record</string>
     <!--  home activity  -->
     <string name="hi">Hi, Yazan</string>
     <string name="new_status">Current Status</string>
@@ -46,5 +44,20 @@
     <string name="Add_Record">Add Record</string>
     <string name="View_Food">View Food</string>
 
+    <!-- new record activity -->
+    <string name="new_Record">New Record</string>
+    <string name="Add_Food_Details">Add Food Details</string>
+    <string name="Category">category</string>
+    <string name="Calory">Calory</string>
+    <string name="Photo">Photo</string>
+    <string name="Upload_Photo">Upload Photo</string>
+    <string name="Save">Save</string>
+
+
+    <string-array name="food_category">
+        <item>Fish</item>
+        <item>Fruits</item>
+        <item>Meat</item>
+    </string-array>
 
 </resources>

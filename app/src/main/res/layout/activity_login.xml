@@ -48,16 +48,26 @@
             android:textSize="18sp"
             android:gravity="center"/>
 
-        <EditText
-            android:id="@+id/user_login"
+
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/user"
             android:layout_marginLeft="30dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginBottom="5dp"
-            android:padding="18dp"
-            />
+            android:layout_marginRight="40dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/user_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:ems="15"
+                android:hint="@string/user"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
