@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".New_Record">
+    tools:context=".AddFood">
 
     <RelativeLayout
         android:id="@+id/relativelayout"
@@ -28,7 +28,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/back_home"
+            android:id="@+id/back_home_addFood"
             android:layout_width="40sp"
             android:layout_height="30sp"
             android:layout_alignParentLeft="true"
@@ -77,6 +77,7 @@
                 android:textStyle="bold" />
 
             <EditText
+                android:id="@+id/edittext_foodName"
                 android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="34dp"
@@ -109,7 +110,7 @@
                 android:textStyle="bold" />
 
             <Spinner
-                android:id="@+id/select"
+                android:id="@+id/spinner_foodType"
                 android:layout_width="141dp"
                 android:layout_height="20dp"
                 android:layout_marginTop="2dp"
@@ -133,13 +134,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20sp"
                 android:layout_marginRight="27dp"
-                android:text="@string/Calory"
+                android:text="@string/Calorie"
                 android:textColor="@color/main_color"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
 
             <EditText
+                android:id="@+id/edittext_calorie"
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
@@ -152,7 +154,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20sp"
-                android:layout_marginRight="41dp"
                 android:text="cal/g"
                 android:textColor="@color/grae"
                 android:textSize="12sp"
@@ -181,16 +182,23 @@
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
-
+<LinearLayout
+    android:layout_width="320dp"
+    android:layout_height="280dp"
+    android:background="#ff0"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    >
             <ImageView
-                android:layout_width="300dp"
-                android:layout_height="250dp"
-                android:layout_marginLeft="20dp"
+                android:id="@+id/imageView_Food_addFood"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:background="@drawable/borderblue"
-                android:gravity="center"
                 android:src="@drawable/food"
-                android:textColor="@color/main_color"
-                android:textSize="16sp" />
+                android:padding="10dp"
+                android:gravity="center" />
+
+</LinearLayout>
 
 
         </LinearLayout>
@@ -204,7 +212,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button_Upload_Photo"
+                android:id="@+id/button_Upload_Photo_addFood"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
@@ -217,7 +225,7 @@
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/button_Save"
+                android:id="@+id/button_Save_addFood"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"

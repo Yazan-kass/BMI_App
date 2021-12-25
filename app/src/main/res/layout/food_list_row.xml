@@ -1,6 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borderblue">
+
+
+        <ImageView
+            android:id="@+id/imageView_Food"
+            android:layout_width="80dp"
+            android:layout_height="89dp"
+            android:background="@drawable/borderblue"
+            android:padding="2dp"
+            android:src="@drawable/food" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageView_Food"
+            android:layout_marginLeft="4dp">
+
+            <TextView
+                android:id="@+id/foodName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salamon"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/foodType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/foodName"
+                android:layout_marginTop="9dp"
+                android:text="Fish"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/calories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/foodType"
+                android:layout_marginTop="10dp"
+                android:text="22 cal / g"
+                android:textSize="11sp" />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btn_Edit"
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="Edit" />
+
+        <Button
+            android:id="@+id/btn_Delete"
+            android:layout_width="40dp"
+            android:layout_height="41dp"
+            android:layout_below="@+id/btn_Edit"
+            android:layout_alignParentRight="true"
+            android:text="X" />
+
+    </RelativeLayout>
+</RelativeLayout>

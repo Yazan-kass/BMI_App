@@ -68,12 +68,14 @@
                 android:textColor="@color/main_color" />
 
             <RadioGroup
+                android:id="@+id/gender"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginLeft="47sp">
 
                 <RadioButton
+                    android:id="@+id/male"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@color/main_color"
@@ -83,10 +85,12 @@
                     android:textColor="@color/main_color" />
 
                 <RadioButton
+                    android:id="@+id/female"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="12sp"
                     android:buttonTint="@color/main_color"
+                    android:checked="false"
                     android:text="@string/female"
                     android:textSize="16sp"
                     android:textColor="@color/main_color" />
@@ -117,6 +121,7 @@
                 android:orientation="horizontal"
                 android:layout_marginLeft="52sp">
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_minusWeight"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_gravity="center"
@@ -127,14 +132,19 @@
                     android:textSize="16sp" />
 
                 <EditText
+                    android:id="@+id/edittext_weight"
                     android:layout_width="80dp"
                     android:layout_height="20dp"
                     android:background="@drawable/borderblue"
                     android:gravity="center"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:text="70"
                     android:textColor="@color/main_color"
                     android:textSize="16sp" />
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_plusWeight"
                     android:layout_width="20sp"
                     android:layout_height="20sp"
                     android:layout_gravity="center"
@@ -179,6 +189,7 @@
             android:orientation="horizontal"
             android:layout_marginLeft="52sp">
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_minusLength"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_gravity="center"
@@ -189,14 +200,19 @@
                 android:textSize="16sp" />
 
             <EditText
+                android:id="@+id/edittext_length"
                 android:layout_width="80dp"
                 android:layout_height="20dp"
                 android:background="@drawable/borderblue"
                 android:gravity="center"
                 android:textColor="@color/main_color"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:text="170"
+                android:maxLines="1"
+                android:inputType="number"/>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_plusLength"
                 android:layout_width="20sp"
                 android:layout_height="20sp"
                 android:layout_gravity="center"
@@ -237,14 +253,16 @@
                 android:textStyle="bold" />
 
 
-            <EditText
+            <TextView
+                android:id="@+id/textview_dob"
                 android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="12sp"
                 android:background="@drawable/borderblue"
                 android:gravity="center"
                 android:textColor="@color/main_color"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:maxLines="1"/>
 
 
         </LinearLayout>

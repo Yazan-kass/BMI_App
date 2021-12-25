@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Signup"
+    tools:context=".Splash"
     android:orientation="vertical"
     android:background="#0B85D8">
 
@@ -12,7 +12,9 @@
         android:id="@id/imageview_logo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/ic_launcher_background" />
+        android:src="@drawable/logo"
+        android:layout_centerInParent="true"
+        android:padding="30dp"/>
 
     <TextView
         android:id="@+id/textview_next"

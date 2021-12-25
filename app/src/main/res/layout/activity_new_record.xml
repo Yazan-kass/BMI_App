@@ -28,7 +28,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/back_home"
+            android:id="@+id/back_home_newRecord"
             android:layout_width="40sp"
             android:layout_height="30sp"
             android:layout_alignParentLeft="true"
@@ -60,7 +60,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="21dp"
             android:layout_marginLeft="20sp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="12sp"
@@ -77,6 +77,7 @@
                 android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_minusWeight_newRecord"
                 android:layout_width="20sp"
                 android:layout_height="20sp"
                 android:layout_gravity="center"
@@ -89,14 +90,18 @@
                 android:textSize="16sp" />
 
             <EditText
+                android:id="@+id/edittext_weight_newRecord"
                 android:layout_width="80dp"
                 android:layout_height="20dp"
                 android:background="@drawable/borderblue"
                 android:gravity="center"
                 android:textColor="@color/main_color"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:text="70"
+                android:inputType="number"/>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_plusWeight_newRecord"
                 android:layout_width="20sp"
                 android:layout_height="20sp"
                 android:layout_gravity="center"
@@ -129,13 +134,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20sp"
                 android:layout_marginRight="20dp"
-
                 android:text="@string/length"
                 android:textColor="@color/main_color"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_minusLength_newRecord"
                 android:layout_width="20sp"
                 android:layout_height="20sp"
                 android:layout_gravity="center"
@@ -148,14 +153,18 @@
                 android:textSize="16sp" />
 
             <EditText
+                android:id="@+id/edittext_length_newRecord"
                 android:layout_width="80dp"
                 android:layout_height="20dp"
+                android:text="170"
                 android:background="@drawable/borderblue"
                 android:gravity="center"
                 android:textColor="@color/main_color"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:inputType="number"/>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_plusLength_newRecord"
                 android:layout_width="20sp"
                 android:layout_height="20sp"
                 android:layout_gravity="center"
@@ -194,7 +203,8 @@
                 android:textStyle="bold" />
 
 
-            <EditText
+            <TextView
+                android:id="@+id/textview_date_newRecord"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16sp"
@@ -202,7 +212,8 @@
                 android:gravity="center"
                 android:paddingBottom="4dp"
                 android:textColor="@color/main_color"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:inputType="date"/>
 
 
         </LinearLayout>
@@ -227,7 +238,8 @@
                 android:textStyle="bold" />
 
 
-            <EditText
+            <TextView
+                android:id="@+id/textview_time_newRecord"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="14sp"
@@ -235,7 +247,8 @@
                 android:gravity="center"
                 android:paddingBottom="4dp"
                 android:textColor="@color/main_color"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:inputType="datetime"/>
 
 
         </LinearLayout>

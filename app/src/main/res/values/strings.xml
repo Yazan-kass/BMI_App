@@ -48,10 +48,12 @@
     <string name="new_Record">New Record</string>
     <string name="Add_Food_Details">Add Food Details</string>
     <string name="Category">category</string>
-    <string name="Calory">Calory</string>
+    <string name="Calorie">Calorie</string>
     <string name="Photo">Photo</string>
     <string name="Upload_Photo">Upload Photo</string>
     <string name="Save">Save</string>
+    <string name="food_list">Food List</string>
+    <string name="edit_food_details">Edit Food Details</string>
 
 
     <string-array name="food_category">
